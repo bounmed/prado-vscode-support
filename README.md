@@ -1,7 +1,7 @@
 # Prado Template for Visual Studio Code
 
-[![GitHub Stars](https://img.shields.io/github/stars/aswinkumar863/prado-vscode-support?logo=github)](https://github.com/mobouzahir/prado-vscode-support)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/aswinkumar863/prado-vscode-support)](https://github.com/mobouzahir/prado-vscode-support/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/aswinkumar863/prado-vscode-support?logo=github)](https://github.com/bounmed/prado-vscode-support)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/aswinkumar863/prado-vscode-support)](https://github.com/bounmed/prado-vscode-support/issues)
 
 This extension provides [Prado Template](https://www.pradoframework.net/) support for Visual Studio Code. 
 Supports `{...}` and `{{...}}` delimiters. Available for both VSCode [desktop](https://code.visualstudio.com/Download) and [web](https://vscode.dev/).
