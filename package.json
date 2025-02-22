@@ -1,20 +1,40 @@
 {
-  "name": "prado-template",
-  "displayName": "Prado Framework Hightlight and Code Completion",
-  "description": "Syntax support for the Prado Framework.",
+  "name": "Prado-template-support",
+  "displayName": "Prado Template Support",
+  "description": "Prado template support with formatting, folding, snippets, syntax highlighting and more",
+  "author": {
+		"name": "Mohamed Bouzahir",
+		"email": "mbouzahir@gmail.com"
+	},
+	"publisher": "bounmed",
+	"license": "MIT",
   "version": "0.0.1",
-  "publisher": "sicutdeux",
-  "engines": {
-    "vscode": "^1.84.0"
-  },
   "icon": "images/logo.png",
   "galleryBanner": {
-    "color": "#293845",
+    "color": "#d94130",
     "theme": "dark"
   },
-  "categories": [
-    "Programming Languages"
-  ],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bounmed/prado-vscode-support.git"
+	},
+	"categories": [
+		"Programming Languages",
+		"Language Packs",
+		"Formatters",
+		"Snippets",
+		"Other"
+	],
+	"keywords": [
+		"prado",
+		"prado 4",
+		"prado template formatting",
+		"tpl",
+		"php"
+	],
+	"engines": {
+		"vscode": "^1.84.0"
+	},
   "contributes": {
     "languages": [
       {
