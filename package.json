@@ -1,0 +1,119 @@
+{
+    "name": "Prado-template-support",
+    "displayName": "Prado Template Support",
+    "description": "Prado template support with formatting, folding, snippets, syntax highlighting and more",
+    "author": {
+        "name": "Mohamed Bouzahir",
+        "email": "mbouzahir@gmail.com"
+    },
+    "publisher": "mbouzahir",
+    "license": "MIT",
+    "version": "0.0.1",
+    "main": "./dist/extension.js",
+    "activationEvents": [
+        "onLanguage:prado"
+    ],
+    "icon": "images/logo.png",
+    "galleryBanner": {
+        "color": "#d94130",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bounmed/prado-vscode-support.git"
+    },
+    "categories": [
+        "Programming Languages",
+        "Language Packs",
+        "Formatters",
+        "Snippets",
+        "Other"
+    ],
+    "keywords": [
+        "prado",
+        "prado 4",
+        "prado template formatting",
+        "tpl",
+        "php"
+    ],
+    "engines": {
+        "vscode": "^1.84.0"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "prado",
+                "aliases": [
+                    "Prado Framework",
+                    "prado"
+                ],
+                "extensions": [
+                    ".tpl",
+                    ".page"
+                ],
+                "icon": {
+                    "light": "./images/file-icon.png",
+                    "dark": "./images/file-icon.png"
+                },
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "prado",
+                "scopeName": "text.html.prado",
+                "path": "./syntaxes/basic.tmLanguage.json",
+                "embeddedLanguages": {
+                    "source.php": "php",
+                    "source.css": "css",
+                    "source.js": "javascript"
+                }
+            }
+        ],
+        "snippets": [
+            {
+                "language": "prado",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ],
+        "configuration": {
+            "title": "Prado",
+            "properties": {
+                "prado.highlight": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable highlight decoration of Prado tags."
+                },
+                "prado.highlightColor": {
+                    "type": "object",
+                    "description": "Highlight decoration color based on theme kind.",
+                    "default": {
+                        "dark": "#FFFFFF25",
+                        "light": "#FFFA0040"
+                    },
+                    "properties": {
+                        "dark": {
+                            "type": "string",
+                            "description": "Highlight color for dark themes."
+                        },
+                        "light": {
+                            "type": "string",
+                            "description": "Highlight color for light themes."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "scripts": {
+        "compile": "tsc -p ./",
+        "watch": "tsc -w -p ./",
+        "vscode:prepublish": "npm run compile"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.30",
+        "@types/vscode": "^1.84.0",
+        "js-yaml": "^4.1.0",
+        "typescript": "^5.4.5"
+    }
+}

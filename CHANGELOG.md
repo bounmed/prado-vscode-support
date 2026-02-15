@@ -1,0 +1,10 @@
+# Change Log
+
+All notable changes to the "prado-template" extension will be documented in this file.
+
+Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+
+## [Unreleased]
+
+- Initial release
+- Implement Prado tag highlight decorations with `prado.highlight` and `prado.highlightColor`.
